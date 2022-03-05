@@ -28,5 +28,5 @@ all = {}
 for idx, value in enumerate(score_list):
     all[int(value)] = title_list[idx]
 
-print(all)
-pprint(all)
+# Print all stories with over 100 points in a sorted pattern
+[pprint(all[x]) for x in sorted(all, reverse=True) if x > 100]
